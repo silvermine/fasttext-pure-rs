@@ -1,0 +1,20 @@
+# Rust
+**/target/
+
+# Node.js (used for commitlint / markdownlint tooling)
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models (large binary files)
+models/*.bin
+models/*.ftz

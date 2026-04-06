@@ -1,0 +1,20 @@
+[package]
+name = "fasttext-pure-rs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.89"
+license = "MIT"
+description = "Pure-Rust fastText inference engine for language identification and text classification"
+repository = "https://github.com/silvermine/fasttext-pure-rs"
+readme = "README.md"
+keywords = ["fasttext", "language-detection", "nlp", "text-classification"]
+categories = ["text-processing", "science"]
+
+[features]
+default = ["std"]
+std = []
+
+[dependencies]
+thiserror = "2.0.17"
+
+[dev-dependencies]

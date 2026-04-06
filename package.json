@@ -1,0 +1,20 @@
+{
+   "name": "@silvermine/fasttext-pure-rs",
+   "version": "0.1.0",
+   "private": true,
+   "description": "Pure-Rust fastText inference engine for language identification and text classification",
+   "scripts": {
+      "commitlint": "commitlint --from f5fc8ad",
+      "markdownlint": "markdownlint-cli2",
+      "markdownlint:fix": "markdownlint-cli2 --fix",
+      "rust:lint": "cargo lint-clippy && cargo lint-fmt",
+      "rust:lint:fix": "cargo fix-clippy && cargo fix-fmt",
+      "test": "cargo test",
+      "standards": "npm run markdownlint && npm run rust:lint && npm run commitlint"
+   },
+   "author": "Silvermine",
+   "license": "MIT",
+   "devDependencies": {
+      "@silvermine/standardization": "2.2.3"
+   }
+}
