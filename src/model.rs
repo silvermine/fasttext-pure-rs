@@ -136,6 +136,10 @@ impl Model {
    /// Returns a vector of `(log_probability, label_index)` pairs sorted
    /// by descending probability.
    pub fn predict(&self, input: &[i32], k: usize, threshold: f32) -> Result<Vec<(f32, i32)>> {
+      if k == 0 {
+         return Ok(Vec::new());
+      }
+
       let mut hidden = vec![0.0f32; self.hsz];
       self.fill_hidden(input, &mut hidden)?;
 
