@@ -4,7 +4,7 @@
    "private": true,
    "description": "Pure-Rust fastText inference engine for language identification and text classification",
    "scripts": {
-      "commitlint": "commitlint --from f5fc8ad",
+      "commitlint": "commitlint --from ${COMMITLINT_FROM:-f5fc8ad}",
       "markdownlint": "markdownlint-cli2",
       "markdownlint:fix": "markdownlint-cli2 --fix",
       "rust:lint": "cargo lint-clippy && cargo lint-fmt",
